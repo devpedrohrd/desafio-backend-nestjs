@@ -1,94 +1,73 @@
-![Logo OW Interactive](https://github.com/owInteractive/desafio-backend/raw/master/media/logo.jpg "OW Interactive")
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-# Desafio Back-End - OW Interactive 21/22
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Sobre a OW Interactive
-Fazemos parte do universo digital, focada em criar e desenvolver experiências interativas, integrando planejamento, criatividade e tecnologia.
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Conheça mais sobre nós em: [OW Interactive - Quem somos](http://www.owinteractive.com/quem-somos/).
+## Description
 
-## Sobre a Vaga
-Esse desafio é destinado todos os níveis e não é exigido que você consiga realizar esse desafio por completo.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-Sua avaliação será dada pelas etapas que conseguir entregar.
+## Installation
 
-Para saber mais sobre as vagas acesse: [OW Interactive - Vagas](http://www.owinteractive.com/vagas/).
+```bash
+$ npm install
+```
 
-Caso você tenha caido aqui por curiosidade sinta-se a vontade para enviar o desafio e aplicar para alguma vaga de backend.
+## Running the app
 
-## Pré-requisitos
-- Lógica de programação;
-- Conhecimentos sobre Banco de dados;
-- Conhecimentos sobre REST, HTTP e API's;
-- Conhecimentos sobre Git;
+```bash
+# development
+$ npm run start
 
-## Requisitos Obrigatórios
-- Utilizar a linguagem [PHP](https://www.php.net/) ou [NodeJS](https://nodejs.org)
-<br/> OBS: Caso seja enviado em PHP e sem docker enviar o projeto para que rode no PHP 8+
-- Utilizar MySQL (ou MariaDB) como base de dados.
-- Código bem documentado, legível e limpo;
-- Fazer uma API simples e objetiva em REST, com o retorno em JSON;
-- Adicionar ao README instruções claras para rodar o projeto, caso não conseguirmos rodar o projeto será desconsiderado o desafio;
-- Deve ser usado [Postman](https://www.php.net/), [Insomnia](https://insomnia.rest/), [Swagger](https://swagger.io/) e etc.Para montar o exemplos da API e adicione ao repósitorio o arquivo gerado pelo programa e especificar qual o arquivo e programa devem ser usados, caso não seja enviado será desconsiderado o desafio;
-- Em qualquer caso de erro ou  não encontrada a API deve retorna uma resposta condizente com o problema apresentado, por exemplo um retorno 500 ou 404;
+# watch mode
+$ npm run start:dev
 
-## Diferenciais
-- Utilizar o [Laravel (PHP)](https://laravel.com/docs/7.x), [Adonis/JS (Node)](https://adonisjs.com/docs/4.1/installation), [Nest JS (Node)](https://nestjs.com/) ou TypeScript;
-- Utilizar o [Docker](https://www.docker.com/get-started) para conteinerização da aplicação;
-- Pensar em desempenho e escalabilidade, quando for uma quantidade muito grande de dados como o sistema se comportaria;
-- Criar testes (Apenas um exemplo, algo bem simples como validação do login ou consumo de um endpoint com ou sem autenticação, no README adicionar qual o comando utilizado para rodar o teste); 
-- Utilizar apenas as ferramentas do framework caso use um, evitando criar dependência de outros pacotes ou bibliotecas;
+# production mode
+$ npm run start:prod
+```
 
-## Desafio
+## Test
 
-### Etapa 1 - Cadastrar Usuários / Endpoint Dos Usuários
-Nessa etapa daremos algumas premissas que devem ser seguidas.
+```bash
+# unit tests
+$ npm run test
 
-- Criar um endpoint onde é cadastrado um usuário.
-  - Esses usuários devem ter obrigátoriamente os seguintes dados modelados, caso você ache necessário outros campos fique a vontade.
-    - **name** | string (Nome)
-    - **email** | string (E-mail)
-    - **birthday** | date (Data de aniversário)
-    - **created_at** | datetime (Criado Em)
-    - **updated_at** | datetime (Atualizado Em)
-- Criar um endpoint para listagem desses usuários, ordernados por ordem de cadastro decrescente (mais novo para mais antigo);
-- Criar um endpoint para listar um único usuário através do seu id;
-- Criar um endpoint para excluir um usuário através do seu id.
+# e2e tests
+$ npm run test:e2e
 
-### Etapa 2 - Cadastrar Movimentações / Endpoint De Movimentações
-Nessa etapa você precisará criar a modelagem e lógica para implementar as funcionalidades abaixo:
+# test coverage
+$ npm run test:cov
+```
 
-- Criar um endpoint ou endpoint`s onde é possível associar uma operação de débito, crédito ou estorno para o usuário;
-- Criar um endpoint onde seja possível visualizar toda a movimentação (páginada) do usuários mais as suas informações pessoais;
-- Criar um endpoint onde seja possível excluir uma movimentação relacionada a um usuário;
-- Criar um endpoint onde é retornado um arquivo no formato (csv) com 3 tipos de filtros para as movimentações:
-  - Últimos 30 dias;
-  - Passando o mês e ano por exemplo: 06/20;
-  - Todo as movimentações;
+## Support
 
-### Etapa 3 - Nova Funcionalidades
-Nessa etapa serão itens onde veremos como você pensou e como chegou ao resultado final.
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-- Adicionar dentro do usuário um campo para saldo inicial, e criar um endpoint para alterar esse valor;
-- Criar um endpoint com a soma de todas as movimentações (débito, crédito e estorno) mais o saldo inicial do usuário;
-- No endpoint que exclui um usuário, adicionar a funcionalidade que agora não será mais possível excluir um usuário que tenha qualquer tipo de movimentação ou saldo;
-- No endpoint que cadastra usuário, adicionar a funcionalidade que apenas maiores de 18 anos podem criar uma conta;
-- No endpoint que exporta o arquivo CSV criar um cabeçalho com os dados do cliente e o seu saldo atual;
+## Stay in touch
 
-### Etapa 4 - Diferenciais
-- Criar validações com base na Request;
-- Utilizar cache para otimizar as consultas e buscas;
-- Criar Seeders ou Inicializadores de dados para o usuários e suas movimentações;
-- Criar os métodos baseados em algum método de autênticação.
-- Documentação dos endpoint`s;
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## Conclusão
-Crie um Fork e submeta uma Pull Request ao Github com o seu desafio. Após isso envie um e-mail para [letsrock@owinteractive.com](mailto:letsrock@owinteractive.com), com o assunto [DESAFIO BACK-END] com o link para o seu desafio, sua apresentação e currículo anexado em formato PDF.
+## License
 
-Caso tenha alguma sugestão sobre o teste ela é bem vinda, fique a vontade para envia-la junto ao e-mail.
-
-E fique a vontade para usar os programas e ferramentas que se sentir bem, lembrando que aqui somos team [VS Code](https://code.visualstudio.com/) rs.
-
-Obrigado por participar e boa sorte 😀
-
-![Cachorro programando](https://github.com/owInteractive/desafio-backend/raw/master/media/dog.webp "Cachorro programando")
+Nest is [MIT licensed](LICENSE).
